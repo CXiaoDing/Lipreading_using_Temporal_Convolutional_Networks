@@ -1,10 +1,11 @@
 import torch
+import numpy as np
 import torch.nn as nn
 from lipreading.models.resnet import ResNet, BasicBlock
 from lipreading.models.shufflenetv2 import ShuffleNetV2
 from lipreading.models.tcn import MultibranchTemporalConvNet, TemporalConvNet
 
-
+print("test")
 # -- auxiliary functions
 def threeD_to_2D_tensor(x):
     n_batch, n_channels, s_time, sx, sy = x.shape
